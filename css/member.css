@@ -1,0 +1,35 @@
+.ui>.ui.eight.label {
+    width: 120px;
+}
+.ui.labeled.input:not([class*="corner labeled"]) .label:first-child
+{
+  border-radius: 5px;
+}
+.ui.labeled.input:not([class*="corner labeled"]) .label:first-child+input
+{
+  border-radius: 5px;
+}
+.ui[class*="center aligned"].container
+{
+  max-width: 700px !important;
+  padding-top: 10px;
+}
+body > div > form > div:nth-child(6) > div > div > div > input
+{
+  width: 130px;
+}
+body > div > form > div:nth-child(8)
+{
+    margin-bottom: 5px;
+}
+#address
+{
+    width: 430px;
+    margin-top: 0px;
+}
+#address2
+{
+    margin-bottom: 10px;
+    width: 430px;
+    margin-top: 5px;
+}
