@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 호스트: localhost
--- 처리한 시간: 17-12-16 20:48 
+-- 처리한 시간: 17-12-17 20:57 
 -- 서버 버전: 5.1.41
 -- PHP 버전: 5.2.12
 
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `countb` (
   `counter` int(11) DEFAULT NULL,
   `regdate` date DEFAULT NULL,
   PRIMARY KEY (`num`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
 -- 테이블의 덤프 데이터 `countb`
@@ -50,7 +50,8 @@ INSERT INTO `countb` (`num`, `counter`, `regdate`) VALUES
 (11, 1, '2017-12-12'),
 (12, 1, '2017-12-14'),
 (13, 2, '2017-12-15'),
-(14, 1, '2017-12-16');
+(14, 1, '2017-12-16'),
+(15, 2, '2017-12-17');
 
 -- --------------------------------------------------------
 
@@ -98,7 +99,7 @@ CREATE TABLE IF NOT EXISTS `free` (
 --
 
 INSERT INTO `free` (`num`, `group_num`, `depth`, `ord`, `id`, `name`, `nick`, `subject`, `content`, `regist_day`, `hit`, `file_name_0`, `file_name_1`, `file_name_2`, `file_name_3`, `file_name_4`, `file_copied_0`, `file_copied_1`, `file_copied_2`, `file_copied_3`, `file_copied_4`, `file_type_0`, `file_type_1`, `file_type_2`, `file_type_3`, `file_type_4`, `file_size_0`, `file_size_1`, `file_size_2`, `file_size_3`, `file_size_4`) VALUES
-(7, 7, 0, 0, 'admin2', '', '', '11', '<p>11</p>', '2017-12-15 (18:47)', 9, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '0', '0', '0', NULL, NULL),
+(7, 7, 0, 0, 'admin2', '', '', '11', '<p>11</p>', '2017-12-15 (18:47)', 10, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '0', '0', '0', NULL, NULL),
 (12, 7, 1, 1, 'admin2', '', '', '[re]11', '&gt;<p>11</p>', '2017-12-15 (19:18)', 1, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '0', '0', '0', NULL, NULL);
 
 -- --------------------------------------------------------
@@ -262,7 +263,7 @@ CREATE TABLE IF NOT EXISTS `member` (
 --
 
 INSERT INTO `member` (`uno`, `sosok`, `com_name`, `ceo_name`, `jikwi`, `user_name`, `security_id1`, `user_id`, `passwd`, `hand_tel1`, `e_mail01`, `job_type`, `fax1`, `czip1`, `caddress`, `ctel1`, `mem_yn`, `mem_type`, `joining_time`, `last_joining_time`) VALUES
-(2, NULL, '대림', '권승환', '', '대리', '1234123', 'admin', '1234', '01051009151', 'shinhwa1156@gmail.com', '', '0332545454', '06000', '서울 강남구 강남대로 708 (압구정동, 한남대교레인보우카폐)', '0332513059', 'Y', 'A', '2017-11-25 16:17:56', '2017-12-16'),
+(2, NULL, '대림', '권승환', '', '대리', '1234123', 'admin', '1234', '01051009151', 'shinhwa1156@gmail.com', '', '0332545454', '06000', '서울 강남구 강남대로 708 (압구정동, 한남대교레인보우카폐)', '0332513059', 'Y', 'A', '2017-11-25 16:17:56', '2017-12-17'),
 (6, NULL, '123', '테스터', '123', '123', '111111', 'test', '1234', '01051009151', 'shinhwa1156@gmail.com', '', '0332545478', '42937', '대구 달성군 가창면 퇴계길 5 (행정리)', '0332513059', 'Y', 'E', '2017-12-16 19:05:05', NULL);
 
 -- --------------------------------------------------------
@@ -311,12 +312,12 @@ CREATE TABLE IF NOT EXISTS `notice` (
 --
 
 INSERT INTO `notice` (`num`, `group_num`, `depth`, `ord`, `id`, `name`, `nick`, `subject`, `content`, `regist_day`, `hit`, `file_name_0`, `file_name_1`, `file_name_2`, `file_name_3`, `file_name_4`, `file_copied_0`, `file_copied_1`, `file_copied_2`, `file_copied_3`, `file_copied_4`, `file_type_0`, `file_type_1`, `file_type_2`, `file_type_3`, `file_type_4`, `file_size_0`, `file_size_1`, `file_size_2`, `file_size_3`, `file_size_4`) VALUES
-(16, 16, 0, 0, 'admin2', '', '', 'asdfasdf', 'sdf', '2017-11-26 (12:19)', 8, 'home.php', '', '', NULL, NULL, '2017_12_15_18_46_37_0.php', '', '', NULL, NULL, 'php', '', '', NULL, NULL, '0', '0', '0', NULL, NULL),
-(17, 17, 0, 0, 'admin2', '', '', 'fasfasf', 'sadf', '2017-11-26 (17:29)', 2, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '0', '0', '0', NULL, NULL),
+(16, 16, 0, 0, 'admin2', '', '', 'asdfasdf', 'sdf', '2017-11-26 (12:19)', 14, 'admin.jpg', '', '', NULL, NULL, '2017_12_17_20_56_11_0.jpg', '', '', NULL, NULL, 'jpg', '', '', NULL, NULL, '22043', '0', '0', NULL, NULL),
+(17, 17, 0, 0, 'admin2', '', '', 'fasfasf', 'sadf', '2017-11-26 (17:29)', 3, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '0', '0', '0', NULL, NULL),
 (19, 19, 0, 0, 'admin2', '', '', 'asdfasfas', '<p>dfasfasfd</p>', '2017-11-26 (17:34)', 1, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '0', '0', '0', NULL, NULL),
 (20, 20, 0, 0, 'admin2', '', '', 'ㅁㄴㅇㄹ', '<p>ㅁㄴㅇㄹ</p>', '2017-11-26 (19:16)', 0, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '0', '0', '0', NULL, NULL),
 (21, 21, 0, 0, 'admin2', '', '', 'ㅁㄴㅇㄹ', '<p>ㅁㄴㅇㄹ</p>', '2017-11-26 (19:16)', 2, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '0', '0', '0', NULL, NULL),
-(22, 22, 0, 0, 'admin2', '', '', 'ㅁㄴㅇㄹ', '<p>ㅁㄴㅇㄹ</p>', '2017-11-26 (19:16)', 0, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '0', '0', '0', NULL, NULL);
+(22, 22, 0, 0, 'admin2', '', '', 'ㅁㄴㅇㄹ', '<p>ㅁㄴㅇㄹ</p>', '2017-11-26 (19:16)', 1, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '', '', '', NULL, NULL, '0', '0', '0', NULL, NULL);
 
 -- --------------------------------------------------------
 
