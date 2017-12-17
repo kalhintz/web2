@@ -195,7 +195,7 @@ function check_input()
 		<div id="view_button">
 				<a href="list.php?table=<?=$table?>&page=<?=$page?>"><input class="btn btn-default" type="button" value="목록"></a>&nbsp;
 <?
-	if($p_id && ($p_id==$item_id) )
+	if($p_id && ($p_id==$item_id) || $p_memtype=='A')
 	{
 ?>
 				<a href="write_form.php?table=<?=$table?>&mode=modify&num=<?=$num?>&page=<?=$page?>"><input class="btn btn-default" type="button" value="수정"></a>&nbsp;
